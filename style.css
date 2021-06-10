@@ -1,0 +1,450 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: #666666 ;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+.nav{
+    border-radius: 50px;
+    background-color: #00a6ce;
+    position: relative;
+    top: 1em;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.nav ul {
+    display: flex;
+    height: 60px;
+}
+.nav ul li {
+    margin: auto;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    list-style: none;
+}
+.first-btn {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+}
+.first-btn:hover {
+    background-color: white;
+    color: #00a6ce;
+    border-radius: 50px;
+}
+.last-btn {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50px;
+    color: #00a6ce !important;
+}
+.last-btn:hover {
+    box-shadow: none;
+    font-weight: bold;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 1em;
+}
+
+/* SLide */
+.slider {
+    width: 100%;
+    height: 500px;
+    background: url('/images/nothing3.png');
+    background-size: cover;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+}
+.slider h1 {
+    margin: auto;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.slider h5 {
+    margin: auto;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    /* font-weight: bold; */
+    color: white;
+}
+.slider p {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    font-weight: bold;
+    color: white;
+}
+.info {
+    padding-top: 10px;
+    padding-bottom: 2em;
+    background-color: black;
+}
+.center-card {
+    position: relative;
+    top: -100px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+.card-wrap {
+    margin: 1em;
+    text-align: center;
+}
+.card-wrap:nth-child(2){
+    border-right: 1px solid #666666;
+    border-left: 1px solid #666666;
+
+}
+.big-text {
+    font-weight: bold;
+    color: #00a6ce;
+}
+.grid-wrap {
+    background: black;
+    padding-bottom: 6em;
+    margin-top: -5px;
+}
+.grid {
+    display: flex;
+}
+.grid-left {
+    width: 70%;
+    margin-right: 1em;
+}
+.grid-right {
+    width: 30%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-left: 1em;
+    max-height: 450px;
+    background: url('/images/box.jpg');
+    background-size: 130%;
+    background-position: center;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.grid-top {
+    display:flex;
+
+}
+.grid-bot {
+    display:flex;
+}
+.blok {
+    margin: 1em;
+    padding: 1em;
+    background: white;
+    border-radius: 10px;
+}
+.blok i, .blok p, .blok strong{
+    color: inherit;
+}
+.blok i {
+    color: #00a6ce;
+    font-size: 30px;
+}
+
+.prices {
+    background: white;
+    border-radius: 10px;
+    height: 500px;
+    position: relative;
+    top: -4em;
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.price-card {
+    width: 25%;
+}
+.price-tag {
+    height: 1em;
+    margin-bottom: 1em;
+}
+.price-card:nth-child(1){
+    border-right: 1px solid gray;
+}
+.price-card:nth-child(1) .price-tag {
+    background: burlywood;
+    border-radius: 10px 0 0 0;
+}
+.price-card:nth-child(2) .price-tag {
+    background: silver;
+}
+.price-card:nth-child(3) .price-tag {
+    background: gold;
+}
+.price-card:nth-child(4) .price-tag {
+    background: #b8d8e7;
+    border-radius: 0 10px 0 0;
+}
+.price-card:nth-child(2){
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.price-card:nth-child(3){
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.price-card:nth-child(4){
+    border-left: 1px solid gray;
+}
+.price-card h1{
+    text-align: center;
+    font-weight: bold;
+    color: #00a6ce;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+}
+.price-card h3 {
+    text-align: center;
+    
+}
+.price-card p {
+    text-align: center;
+    font-size: 18px;
+}
+.buy-btn {
+    width: 120px;
+    background: #00a6ce;
+    padding: 0.5em 1em;
+    margin: auto;
+    margin-top: 4em;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.buy-btn:hover{
+    box-shadow: 1px 1px 2px 2px #00a6ce;
+    background: white;
+    color: #00a6ce;
+}
+.tax {
+    margin-top: 5px;
+    font-size: 10px !important;
+}
+
+
+
+/* ROTATE BOX */
+.three-containers-wrapper {
+    padding-bottom: 10em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box-scene {
+    -webkit-perspective: normal ;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    z-index: 999;
+    
+}
+.box-scene:hover .box {
+    -webkit-transform: rotateY(-180deg);
+}
+.box {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.4s ease-out;
+    -webkit-transform-origin: 90px 90px -90px;
+    /* float: left; */
+    margin: 30px auto;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    
+    -webkit-transform-origin: 0 0;
+}
+.front {
+    -webkit-transform: rotateY(0deg);
+    z-index: 2;
+    background: url('/images/glass_pane.png');
+    background-size: cover ;
+}
+.side {
+    border: 1px solid white;
+    background: url('/images/question_mark.png');
+    background-position: top;
+    background-size: cover;
+    -webkit-transform: rotateY(180deg);
+    z-index: 1;
+    left: 180px;
+}
+.side p {
+    width: 200px;
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    margin-left: -100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.box-scene h2 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/* ROTATE BOX END */
+
+
+footer {
+    padding-top: 2em;
+    background-color: #00a6ce;
+}
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+footer hr {
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-company-info {
+    width: 33%;
+    display: block;
+    text-align: center;
+    
+}
+.footer-company-info h2 {
+    font-weight: bold;
+    color: white;
+}
+.footer-company-info p {
+    color: white;
+}
+.footer-company-info img {
+    
+    width: 100px;
+    height: 100px;
+}
+.footer-nav {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.footer-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+
+}
+.footer-nav li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+.footer-social {
+    display: flex;
+    margin: auto;
+
+    margin-bottom: 3em;
+}
+.fb {
+    width: 50px;
+    height: 50px;
+    background: url('/images/icons/fb_line.png');
+    background-size: contain;
+    margin: 1em;
+    cursor: pointer;
+}
+.ig {
+    width: 50px;
+    height: 50px;
+    background: url('/images/icons/instagram_line.png');
+    background-size: contain;
+    margin: 1em;
+    cursor: pointer;
+}
+.yb {
+    width: 50px;
+    height: 50px;
+    background: url('/images/icons/youtube_line.png');
+    background-size: contain;
+    margin: 1em;
+    cursor: pointer;
+}
+.fb:hover{
+    background: url('/images/icons/fb_full.png');
+    background-size: contain;
+}
+.ig:hover{
+    background: url('/images/icons/instagram_full.png');
+    background-size: contain;
+}
+.yb:hover{
+    background: url('/images/icons/youtube_full.png');
+    background-size: contain;
+}
+
+
+/* About us */
+.about-us-info {
+    display: flex;
+
+}
+.who-are-we {
+    width: 50%;
+    margin-right: 2em;
+}
+.who-are-we h2{
+    color: white;
+    margin-bottom: 1em;
+}
+.who-are-we h4{
+    color: white;
+    margin-bottom: 0.5em;
+}
+.who-are-we p {
+    color: white;
+}
+.map {
+    width: 50%;
+    margin-left: 2em;
+}
