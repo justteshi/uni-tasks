@@ -14,6 +14,7 @@ nav {
     position: relative;
     z-index: 1;
 }
+
 .nav{
     border-radius: 50px;
     background-color: #00a6ce;
@@ -84,6 +85,14 @@ nav {
     top: 45%;
     text-align: center;
     /* font-weight: bold; */
+    color: white;
+}
+.slider h5 a {
+    text-decoration: none;
+    color: white;
+}
+.slider h5 a:hover {
+    text-decoration: underline;
     color: white;
 }
 .slider p {
@@ -269,20 +278,34 @@ nav {
     z-index: 999;
     
 }
-.box-scene:hover .box {
+/* .box-scene:hover .box {
     -webkit-transform: rotateY(-180deg);
-}
+} */
 .box {
     cursor: pointer;
     width: 250px;
     height: 250px;
     position: relative;
     
+    
+    /* float: left; */
+    margin: 30px auto;
+}
+.ani:hover {
+    transform: scale(1.1) rotate(4deg);
+}
+.disabled:hover {
+    animation-name: buzz-out;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.box-rotate {
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 0.4s ease-out;
     -webkit-transform-origin: 90px 90px -90px;
-    /* float: left; */
-    margin: 30px auto;
+    -webkit-transform: rotateY(-180deg);
+
 }
 .face {
     position: absolute;
@@ -300,9 +323,9 @@ nav {
 }
 .side {
     border: 1px solid white;
-    background: url('/images/question_mark.png');
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     -webkit-transform: rotateY(180deg);
     z-index: 1;
     left: 180px;
@@ -322,6 +345,20 @@ nav {
     font-weight: bold;
     color: white;
     text-align: center;
+}
+
+.play-again {
+    padding: 1em 2em;
+    border: 1px solid #00a6ce;
+    background: #00a6ce;
+    color: white;
+    border-radius: 50px;
+
+}
+.play-again:hover{
+    border: 1px solid #00a6ce;
+    background: white;
+    color: #00a6ce;
 }
 /* ROTATE BOX END */
 
@@ -447,4 +484,49 @@ footer hr {
 .map {
     width: 50%;
     margin-left: 2em;
+}
+
+
+
+@keyframes buzz-out {
+    10% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        -webkit-transform: translateX(1px) rotate(0);
+        transform: translateX(1px) rotate(0);
+    }
+    100% {
+        -webkit-transform: translateX(-1px) rotate(0);
+        transform: translateX(-1px) rotate(0);
+    }
 }

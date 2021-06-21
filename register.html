@@ -31,49 +31,55 @@
     <!-- Main -->
     <div class="main">
         <div class="slider">
-            <h1>Nothing In The Box </h1>
-            <h5>Home / Try for free</h5>
+            <h1>Mystery Box </h1>
+
+            <h5><a href="/index.html">Home</a> / Try for free</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid rerum eveniet tenetur. Architecto modi ea error totam aut! Quo, expedita a rerum magnam distinctio officiis maiores totam inventore. Aut!</p>
         </div>
         <div class="info">
+            <h3 style="color: white; text-align: center;">1) Pick a box</h3>
+            <h3 style="color: white; text-align: center; margin-bottom: 2em;">2) Win prizes</h3>
+
             <div class="three-containers-wrapper container">
-                <div class='box-scene'>
-                    <div class='box'>
+                <div class='box-scene ani'>
+                    <div class='box' onclick="boxRotate(this)">
                         <div class='front face'>
                             <img src='' alt=''>
                         </div>
                         <div class="side face">
-                            <p>NOTHING'S HERE</p>
+
                         </div>
                     </div>
                     <h2>Box 1</h2>
                 </div>
-                <div class='box-scene'>
-                    <div class='box'>
+                <div class='box-scene ani'>
+                    <div class='box' onclick="boxRotate(this)">
                         <div class='front face'>
                             <img src='' alt=''>
                         </div>
                         <div class="side face">
-                            <p>NOTHING'S HERE</p>
+
                         </div>
                     </div>
                     <h2>Box 2</h2>
 
                 </div>
-                <div class='box-scene'>
-                    <div class='box'>
+                <div class='box-scene ani'>
+                    <div class='box' onclick="boxRotate(this)">
                         <div class='front face'>
                             <img src='' alt=''>
                         </div>
                         <div class="side face">
-                            <p>NOTHING'S HERE</p>
+
                         </div>
                     </div>
-                    <h2>Box 1</h2>
+                    <h2>Box 3</h2>
 
                 </div>
 
             </div>
+            <h2 class="prize-text" style="padding: 2em; height: 200px;"></h2>
+            <center><button class="play-again"onclick="window.location.reload()">Play again</button></center>
         </div>
     </div>
     <!-- Footer -->
@@ -81,7 +87,7 @@
         <div class="footer container">
             <div class="footer-company-info">
                 <img src="/images/logo.png">
-                <h2>Nothin in the box</h2>
+                <h2>Mystery box</h2>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas eaque sed eligendi aperiam, adipisci tenetur obcaecati natus ducimus aspernatur ipsa possimus nesciunt quidem vero harum. Veniam quas molestias est.</P>
             </div>
             <div class="footer-social">
@@ -117,5 +123,6 @@
             })
         }
     </script>
+    <script src="./main.js"></script>
 </body>
 </html>
